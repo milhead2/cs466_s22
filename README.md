@@ -15,11 +15,12 @@ You will need git installed and possibly other applications as well (git, cmake,
 	- ```cd pico```
 	- ```git clone git@github.com:raspberrypi/pico-examples.git```
 	- ```git clone git@github.com:raspberrypi/pico-sdk.git```
-	- ```export PICO_SDK_PATH=~/src/pico/pico-sdk```  Also add this export to your .bashrc file, (I just put them onthe bottom)
-		- ```echo "export PICO_SDK_PATH=~/src/pico/pico-sdk" >> ~/.bashrd```  Be very sure you append with ```>>`` or you can overwrite your bashrc file.
+	- ```export PICO_SDK_PATH=~/src/pico/pico-sdk```  Also add this export to your .bashrc file, (I just append them at the bottom if the file)
+		- ```echo "export PICO_SDK_PATH=~/src/pico/pico-sdk" >> ~/.bashrc```  Be very sure you append with ```>>`` or you can overwrite your bashrc file.
 	- ```cd ~/src```
-	- ```git submodule update --init```  
+ - Build the SDK and examples dir.  This may require additional software installs...  The compiler install is below.
     - ```cd ../pico-examples```
+	- ```git submodule update --init```  
 	- ```cmake .```
 	- ```make```
 	
@@ -30,7 +31,22 @@ You will need git installed and possibly other applications as well (git, cmake,
 	- ```wget https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.10/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux.tar.bz2```
 	- ```bzip2 -d gcc-arm-none-eabi-10.3-2021.10-x86_64-linux.tar.bz2```
 	- ```tar xvf gcc-arm-none-eabi-10.3-2021.10-x86_64-linux.tar```
+	- Make sure that ths binary directory of this compuler is in your path
+	- ```export PATH=$PATH:~/src/pico/bin/gcc-arm-none-eabi-10.3-2021.10/bin```  Also add this export to your .bashrc file, (I just append them at the bottom if the file)
+		- ```echo "export PATH=$PATH:~/src/pico/bin/gcc-arm-none-eabi-10.3-2021.10/bin" >> ~/.bashrc```  Be very sure you append with ```>>`` or you can overwrite your bashrc file.
 	- ```cd ..```
+	- Verify that you can see the installed compiler in your path
+	- ``` arm-none-eabi-gcc --version```
+	- Should produce the output...
+		```
+		arm-none-eabi-gcc (GNU Arm Embedded Toolchain 10.3-2021.10) 10.3.1 20210824 (release)
+		Copyright (C) 2020 Free Software Foundation, Inc.
+		This is free software; see the source for copying conditions.  There is NO
+		warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+		```
+
+
+	
 		
 		
 		
