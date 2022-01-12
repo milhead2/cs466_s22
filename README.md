@@ -9,6 +9,13 @@ If you experiance issues in lab it will help me isolate where the issue lies.  I
 
 You will need git installed and possibly other applications as well (git, cmake, ) use ```sudo apt install``` for missing packages
 
+The pico directlry that I create below is a peer to the class CS466_S22 directory that you can install with the following commands
+	- ```cd ~/src``` (or your replacement for src)
+	- ```git clone git@github.com:milhead2/cs466_s22.git```
+	
+This file is the README.md from the class repo.
+
+
  - Download SDK, examples and ARM compiler
 	- ```cd ~/src``` (or your replacement for src)
 	- ```mkdir pico```
