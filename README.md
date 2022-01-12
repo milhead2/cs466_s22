@@ -15,6 +15,8 @@ You will need git installed and possibly other applications as well (git, cmake,
 	
 This file is the README.md from the class repo.
 
+Build Environment Installation Steps
+------------------------------------
 
  - Download SDK, examples and ARM compiler
 	- ```cd ~/src``` (or your replacement for src)
@@ -27,6 +29,10 @@ This file is the README.md from the class repo.
 	- ```cd ~/src```
  - Build the SDK and examples dir.  This may require additional software installs...  The compiler install is below.
     - ```cd ../pico-examples```
+	- ```git submodule update --init```  
+	- ```cmake .```
+	- ```make```
+    - ```cd ../pico-sdk```
 	- ```git submodule update --init```  
 	- ```cmake .```
 	- ```make```
@@ -53,6 +59,8 @@ This file is the README.md from the class repo.
 		```
 
 
+Build Provided Lab1 Code
+------------------------
 	
 		
 		
