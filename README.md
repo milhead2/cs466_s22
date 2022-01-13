@@ -67,6 +67,7 @@ Build Provided Lab One Code
 
 	- You should have you CS466_S22 repo in a peer directory to the pico tools.  For me that is ```~/src/cs466_s22``` and the pico tools in ```~/src/pico```
 	- Create a build directory and make it your current dir
+		- ```cd ~/src/cs466_s22/lab1```
 		- ```mkdir build```
 		- ```cd build```
 	- Call ```cmake``` to generate a makefile
