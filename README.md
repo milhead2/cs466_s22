@@ -60,7 +60,7 @@ Build Environment Installation Steps
 		```
 
 
-Build Provided Lab One Code
+Build The Provided Lab One Code
 ---------------------------
 
 - We will using cmake to generate a Makefile 
