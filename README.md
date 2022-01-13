@@ -79,13 +79,14 @@ Build Provided Lab One Code
 		- ```cp lab1.uf2 /media/miller/RPI-RP2```
 		
 
-
+Backup Information (ignore below)
+---------------------------------
 	
 		
 		
 		
 		
-	18274  cd pico/
+18274  cd pico/
 18276  cd pico-examples/
 18286  cd ..
 18291  git clone git@github.com:raspberrypi/pico-sdk.git
