@@ -36,6 +36,7 @@ Build Environment Installation Steps
 	- ```git submodule update --init```  
 	- ```cmake .```
 	- ```make```
+	export PICO_SDK_PATH=~/src/pico/pico-sdk
 	
  - If you do not have the ARM GCC compiler installed you can get it from here..
 	- ```cd ~/src```
@@ -59,8 +60,20 @@ Build Environment Installation Steps
 		```
 
 
-Build Provided Lab1 Code
-------------------------
+Build Provided Lab 1 Code
+-------------------------
+
+	- You should have you CS466_S22 repo in a peer directory to the pico tools.  For me that is ```~/src/cs466_s22``` and the pico tools in ```~/src/pico```
+	- Create a build directory and make it your current dir
+		- ```mkdir build```
+		- ```cd build```
+	- Call ```cmake``` to generate a makefile
+		- ```cmake ..```
+	- Then use ```make``` to build the SDK and the lab1 code
+		- ```make```
+		
+
+
 	
 		
 		
