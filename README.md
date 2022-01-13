@@ -74,6 +74,9 @@ Build Provided Lab One Code
 		- ```cmake ..```
 	- Then use ```make``` to build the SDK and the lab1 code
 		- ```make```
+	- If the make is successful, the file ```lab1.uf2``` will be created in the build directory.  To execute that file reboot the pico into 
+	drive-loader-mode by booting with the button pressed and copy the ```lab1.uf2``` to the faux drive that the pico creates.
+		- ```cp lab1.uf2 /media/miller/RPI-RP2```
 		
 
 
