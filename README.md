@@ -9,7 +9,7 @@ If you experiance issues in lab it will help me isolate where the issue lies.  I
 
 You will need git installed and possibly other applications as well (git, cmake, ) use ```sudo apt install``` for missing packages
 
- - The pico directlry that I create below is a peer to the class CS466_S22 directory that you can install with the following commands
+ - The pico directory that I create below is a peer to the class CS466_S22 directory that you can install with the following commands
 	- ```cd ~/src``` (or your replacement for src)
 	- ```git clone git@github.com:milhead2/cs466_s22.git```
 	
@@ -62,7 +62,6 @@ Build Environment Installation Steps
 
 Build Provided Lab 1 Code
 -------------------------
-
 	- You should have you CS466_S22 repo in a peer directory to the pico tools.  For me that is ```~/src/cs466_s22``` and the pico tools in ```~/src/pico```
 	- Create a build directory and make it your current dir
 		- ```mkdir build```
