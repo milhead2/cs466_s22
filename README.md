@@ -7,6 +7,8 @@ I locate all my development projects in a directory ```~/src``` Doing so allows 
 It's not necessary that you use ```src``` as your parent directory but pick a directory that you treat as src of your own and install our class repo and development tools for class below it.  
 If you experiance issues in lab it will help me isolate where the issue lies.  It 'should' also make all my ```make``` and ```cmake``` files work straight off without modification.
 
+![Capture](https://user-images.githubusercontent.com/19733331/150585134-7ebbc1ad-c76b-4c19-bdd8-8922a14eacbe.JPG)
+
 You will need git installed and possibly other applications as well (git, cmake, ) use ```sudo apt install``` for missing packages
 
  - The pico directory that I create below is a peer to the class CS466_S22 directory that you can install with the following commands
@@ -78,6 +80,24 @@ Build The Provided Lab One Code
 	drive-loader-mode by booting with the button pressed and copy the ```lab1.uf2``` to the faux drive that the pico creates.
 		- ```cp lab1.uf2 /media/miller/RPI-RP2```
 		
+
+Add FreeREOS to directlry tree
+---------------------------
+
+- In order to build lab2 and later projects you wiull need to add the latest freertos directory to your dev disk.  
+	- Download the freertos image from www.freertos.irg
+	- set your current directory to your parent dir.
+	- run the command to extract the archive...
+		- ```unzip ~/Downloads/FreeRTOSv202112.00.zip```
+	- It will land in the correct place as a peer to the cs466_s22 directory.
+
+- You should now be able to build the lab2 code.
+	- ```cd ~/src/cs466_s22/lab1```
+	- ```mkdir build```
+	- ```cd build```
+	- ```cmake ..```
+	- ```make```
+
 
 Backup Information (ignore below)
 ---------------------------------
