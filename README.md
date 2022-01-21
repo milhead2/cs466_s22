@@ -13,7 +13,7 @@ You will need git installed and possibly other applications as well (git, cmake,
 
  - The pico directory that I create below is a peer to the class CS466_S22 directory that you can install with the following commands
 	- ```cd ~/src``` (or your replacement for src)
-	- ```git clone git@github.com:milhead2/cs466_s22.git```
+	- ```git clone https://github.com/milhead2/cs466_s22.git```
 	
 This file is the README.md from the class repo.
 
@@ -24,8 +24,8 @@ Build Environment Installation Steps
 	- ```cd ~/src``` (or your replacement for src)
 	- ```mkdir pico```
 	- ```cd pico```
-	- ```git clone git@github.com:raspberrypi/pico-examples.git```
-	- ```git clone git@github.com:raspberrypi/pico-sdk.git```
+	- ```git clone https://github.com/raspberrypi/pico-examples.git```
+	- ```git clone https://github.com/raspberrypi/pico-sdk.git```
 	- ```export PICO_SDK_PATH=~/src/pico/pico-sdk```  Also add this export to your .bashrc file, (I just append them at the bottom if the file)
 		- ```echo "export PICO_SDK_PATH=~/src/pico/pico-sdk" >> ~/.bashrc```  Be very sure you append with ```>>`` or you can overwrite your bashrc file.
 	- ```cd ~/src```
@@ -85,7 +85,7 @@ Add FreeREOS to directory tree
 ---------------------------
 
 - In order to build lab2 and later projects you wiull need to add the latest freertos directory to your dev disk.  
-	- Download the freertos image from www.freertos.irg
+	- Download the freertos image from www.freertos.org
 	- set your current directory to your parent dir.
 	- run the command to extract the archive...
 		- ```unzip ~/Downloads/FreeRTOSv202112.00.zip```
