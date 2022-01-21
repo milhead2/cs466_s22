@@ -95,7 +95,7 @@ Build the lab2 husk code
 ---------------------------
 
 - You should now be able to build the lab2 code.
-	- ```cd ~/src/cs466_s22/lab1```
+	- ```cd ~/src/cs466_s22/lab2```
 	- ```mkdir build```
 	- ```cd build```
 	- ```cmake ..```
