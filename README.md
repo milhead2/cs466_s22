@@ -81,7 +81,7 @@ Build The Provided Lab One Code
 		- ```cp lab1.uf2 /media/miller/RPI-RP2```
 		
 
-Add FreeREOS to directory tree
+Add FreeRTOS to directory tree
 ---------------------------
 
 - In order to build lab2 and later projects you wiull need to add the latest freertos directory to your dev disk.  
