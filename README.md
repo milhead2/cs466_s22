@@ -81,7 +81,7 @@ Build The Provided Lab One Code
 		- ```cp lab1.uf2 /media/miller/RPI-RP2```
 		
 
-Add FreeREOS to directlry tree
+Add FreeREOS to directory tree
 ---------------------------
 
 - In order to build lab2 and later projects you wiull need to add the latest freertos directory to your dev disk.  
@@ -90,6 +90,9 @@ Add FreeREOS to directlry tree
 	- run the command to extract the archive...
 		- ```unzip ~/Downloads/FreeRTOSv202112.00.zip```
 	- It will land in the correct place as a peer to the cs466_s22 directory.
+
+Build the lab2 husk code
+---------------------------
 
 - You should now be able to build the lab2 code.
 	- ```cd ~/src/cs466_s22/lab1```
