@@ -7,11 +7,13 @@ I locate all my development projects in a directory ```~/src``` Doing so allows 
 It's not necessary that you use ```src``` as your parent directory but pick a directory that you treat as src of your own and install our class repo and development tools for class below it.  
 If you experiance issues in lab it will help me isolate where the issue lies.  It 'should' also make all my ```make``` and ```cmake``` files work straight off without modification.
 
+![Capture](https://user-images.githubusercontent.com/19733331/150585134-7ebbc1ad-c76b-4c19-bdd8-8922a14eacbe.JPG)
+
 You will need git installed and possibly other applications as well (git, cmake, ) use ```sudo apt install``` for missing packages
 
  - The pico directory that I create below is a peer to the class CS466_S22 directory that you can install with the following commands
 	- ```cd ~/src``` (or your replacement for src)
-	- ```git clone git@github.com:milhead2/cs466_s22.git```
+	- ```git clone https://github.com/milhead2/cs466_s22.git```
 	
 This file is the README.md from the class repo.
 
@@ -22,8 +24,8 @@ Build Environment Installation Steps
 	- ```cd ~/src``` (or your replacement for src)
 	- ```mkdir pico```
 	- ```cd pico```
-	- ```git clone git@github.com:raspberrypi/pico-examples.git```
-	- ```git clone git@github.com:raspberrypi/pico-sdk.git```
+	- ```git clone https://github.com/raspberrypi/pico-examples.git```
+	- ```git clone https://github.com/raspberrypi/pico-sdk.git```
 	- ```export PICO_SDK_PATH=~/src/pico/pico-sdk```  Also add this export to your .bashrc file, (I just append them at the bottom if the file)
 		- ```echo "export PICO_SDK_PATH=~/src/pico/pico-sdk" >> ~/.bashrc```  Be very sure you append with ```>>`` or you can overwrite your bashrc file.
 	- ```cd ~/src```
@@ -78,6 +80,27 @@ Build The Provided Lab One Code
 	drive-loader-mode by booting with the button pressed and copy the ```lab1.uf2``` to the faux drive that the pico creates.
 		- ```cp lab1.uf2 /media/miller/RPI-RP2```
 		
+
+Add FreeRTOS to directory tree
+---------------------------
+
+- In order to build lab2 and later projects you wiull need to add the latest freertos directory to your dev disk.  
+	- Download the freertos image from www.freertos.org
+	- set your current directory to your parent dir.
+	- run the command to extract the archive...
+		- ```unzip ~/Downloads/FreeRTOSv202112.00.zip```
+	- It will land in the correct place as a peer to the cs466_s22 directory.
+
+Build the lab2 husk code
+---------------------------
+
+- You should now be able to build the lab2 code.
+	- ```cd ~/src/cs466_s22/lab2```
+	- ```mkdir build```
+	- ```cd build```
+	- ```cmake ..```
+	- ```make```
+
 
 Backup Information (ignore below)
 ---------------------------------
