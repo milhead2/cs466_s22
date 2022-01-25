@@ -1,0 +1,6 @@
+set line /dev/ttyACM0
+set speed 115200
+set carrier-watch off
+robust
+c
+q
