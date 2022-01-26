@@ -10,7 +10,7 @@
 
 #include <FreeRTOS.h>
 #include <task.h>
-#include <semphr.h>
+//#include <semphr.h>
 
 #include "hardware/gpio.h"
 #include "pico/stdlib.h"
