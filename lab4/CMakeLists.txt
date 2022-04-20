@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.13)
 include(../../pico/pico-sdk/external/pico_sdk_import.cmake)
 #include(external/pico_sdk_import.cmake)
 
-set(PICO_SDK_FREERTOS_SOURCE ../../FreeRTOSv202111.00/FreeRTOS/Source)
+set(PICO_SDK_FREERTOS_SOURCE ../../FreeRTOSv202112.00/FreeRTOS/Source)
 
 project(lab4 C CXX ASM)
 set(CMAKE_C_STANDARD 11)
